@@ -1,12 +1,33 @@
 .p-branch-menu {
 	margin: 20px;
+	@include breakpoint( tablet ) {
+		margin: 40px;
+	}
+	@include breakpoint( pc ) {
+		margin: 60px;
+	}
 	> ul {
 		margin-bottom: 50px;
+		@include breakpoint( tablet ) {
+			display: flex;
+			justify-content: space-between;
+		}
+		@include breakpoint( pc ) {
+		}
 		> li {
 			height: 640px;
 			margin-bottom: 20px;
 			padding: 10px;
 			background-size: cover;
+			box-sizing: border-box;
+			@include breakpoint( tablet ) {
+				width: calc( 50% - 20px );
+				padding: 12px;
+			}
+			@include breakpoint( pc ) {
+				width: calc( 50% - 25px );
+				padding: 20px;
+			}
 			&.takeout {
 				background-image: url( images/front-page/bg_takeout@2x.jpg );
 				background-repeat: no-repeat;
@@ -20,6 +41,10 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+				}
 				h3 {
 					font-size: 4.0rem;
 					color: #fff;
@@ -34,6 +59,10 @@
 					}
 				}
 				.description {
+					@include breakpoint( tablet ) {
+					}
+					@include breakpoint( pc ) {
+					}
 					li {
 						margin-bottom: 10px;
 						padding: 10px;

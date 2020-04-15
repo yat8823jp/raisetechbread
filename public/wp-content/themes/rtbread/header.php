@@ -26,5 +26,5 @@
 			<p class="l-header__sitename"><a href="/"><?php bloginfo( 'name' ); ?></a></p>
 		<?php endif; ?>
 		<?php get_search_form(); ?>
-		<button class="p-hamburger-bt">Menu</button>
+		<button id="sidebar-bt--open" class="l-sidebar-bt--open">Menu</button>
 	</header>

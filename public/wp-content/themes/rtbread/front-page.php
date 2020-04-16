@@ -4,7 +4,7 @@
 		<div class="p-mainvisual">
 			<h2>ダミーサイト</h2>
 		</div>
-		<article class="p-contens">
+		<article class="p-contents">
 			<div class="p-branch-menu">
 				<ul>
 					<li class="takeout">

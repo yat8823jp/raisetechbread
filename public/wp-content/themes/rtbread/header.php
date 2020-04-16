@@ -23,7 +23,7 @@
 		<?php if( is_home() || is_front_page( ) ) : ?>
 			<h1 class="l-header__sitename"><?php bloginfo( 'name' ); ?></h1>
 		<?php else : ?>
-			<p class="l-header__sitename"><a href="/"><?php bloginfo( 'name' ); ?></a></p>
+			<p class="l-header__sitename"><a href="<?php echo esc_url( home_url( "/" ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
 		<?php endif; ?>
 		<?php get_search_form(); ?>
 		<button id="sidebar-bt--open" class="l-sidebar-bt--open">Menu</button>

@@ -29,6 +29,11 @@ function custom_theme_support() {
 }
 add_action( 'after_setup_theme', 'custom_theme_support' );
 
+//カテゴリー説明文でHTMLタグを使う
+remove_filter( 'pre_term_description', 'wp_filter_kses' );
+//カテゴリー説明文から自動で付与されるpタグを除去
+remove_filter( 'term_description', 'wpautop' );
+
 function readScript() {
 	wp_enqueue_style(  'ress', get_template_directory_uri() . '/ress.min.css' , array(), $theme_version );
 	wp_enqueue_style(  'robot', '//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), '' );

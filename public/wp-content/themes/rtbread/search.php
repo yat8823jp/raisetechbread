@@ -2,8 +2,8 @@
 <div class="l-container p-archive">
 	<article class="l-main">
 		<div class="p-page-title">
-			<h2 class="main">Menu:</h2>
-			<p class="sub"><?php echo esc_html( single_term_title( '', false ) ); ?></p>
+			<h2 class="main">Search:</h2>
+			<p class="sub"><?php  the_search_query(); ?></p>
 		</div>
 		<article class="p-archive__description">
 			<?php echo category_description(); ?>
@@ -33,6 +33,10 @@
 								</li>
 							<?php
 						endwhile;
+					else :
+						?>
+							<li class="c-card">お探しの商品は見つかりませんでした</li>
+						<?php
 					endif;
 				?>
 			</ul>

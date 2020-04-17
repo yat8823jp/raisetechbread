@@ -1,0 +1,27 @@
+.archive {
+	.p-archive {
+		&__description {
+			padding: 0 20px;
+			color: #3C2A10;
+			@include breakpoint( tablet ) {
+				padding: 0 40px;
+			}
+			@include breakpoint( pc ) {
+				padding: 0 100px;
+			}
+			h2 {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				font-size: 2.8rem;
+				font-weight: bold;
+			}
+			p {
+				font-size: 1.6rem;
+				line-height: 1.8;
+			}
+		}
+		.p-contents {
+			margin-bottom: 100px;
+		}
+	}
+}

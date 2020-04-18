@@ -2,8 +2,9 @@
 <div class="l-container p-archive">
 	<article class="l-main">
 		<div class="p-page-title">
-			<h2 class="main">Search:</h2>
-			<p class="sub"><?php  the_search_query(); ?></p>
+			<h1 class="main">Search:
+				<p class="sub"><?php the_search_query(); ?></p>
+			</h1>
 		</div>
 		<article class="p-archive__description">
 			<?php echo category_description(); ?>

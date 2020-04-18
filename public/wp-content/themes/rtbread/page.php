@@ -3,7 +3,7 @@
 	<article class="l-main">
 		<div class="p-page-title__wrap">
 			<div class="p-page-title">
-				<h2 class="main"><?php the_title(); ?></h2>
+				<h1 class="main"><?php the_title(); ?></h1>
 			</div>
 			<?php echo $thumnail = has_post_thumbnail() ? get_the_post_thumbnail( $page->ID, "large", $args = array( "class" => "p-page-title__bg" ) ) : '<div class="no-thumbnail"></div>'; ?>
 		</div>

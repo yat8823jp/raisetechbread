@@ -1,5 +1,3 @@
-<div class="l-container">
-	<article class="l-main">
 		<?php get_header(); ?>
 		<div class="p-mainvisual">
 			<h2>ダミーサイト</h2>

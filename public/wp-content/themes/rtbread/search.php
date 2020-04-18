@@ -1,6 +1,4 @@
-<?php get_header(); ?>
-<div class="l-container p-archive">
-	<article class="l-main">
+		<?php get_header(); ?>
 		<div class="p-page-title">
 			<h1 class="main">Search:
 				<p class="sub"><?php the_search_query(); ?></p>

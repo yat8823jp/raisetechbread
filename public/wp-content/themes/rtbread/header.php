@@ -18,13 +18,22 @@
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/images/common/favicon.ico">
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class( 'index' ); ?>>
-	<header class="l-header">
-		<?php if( is_home() || is_front_page( ) ) : ?>
-			<h1 class="l-header__sitename"><?php bloginfo( 'name' ); ?></h1>
-		<?php else : ?>
-			<p class="l-header__sitename"><a href="<?php echo esc_url( home_url( "/" ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
-		<?php endif; ?>
-		<?php get_search_form(); ?>
-		<button id="sidebar-bt--open" class="l-sidebar-bt--open">Menu</button>
-	</header>
+<body <?php body_class(); ?>>
+	<?php if( is_search() || is_archive() ) : ?>
+		<div class="l-container p-archive">
+	<?php elseif( is_single() || is_page() || is_404() ) : ?>
+		<div class="l-container p-detail">
+	<?php else : ?>
+		<div class="l-container">
+	<?php endif; ?>
+		<article class="l-main">
+
+			<header class="l-header">
+				<?php if( is_home() || is_front_page( ) ) : ?>
+					<h1 class="l-header__sitename"><?php bloginfo( 'name' ); ?></h1>
+				<?php else : ?>
+					<p class="l-header__sitename"><a href="<?php echo esc_url( home_url( "/" ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+				<?php endif; ?>
+				<?php get_search_form(); ?>
+				<button id="sidebar-bt--open" class="l-sidebar-bt--open">Menu</button>
+			</header>

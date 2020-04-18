@@ -122,3 +122,22 @@
 		}
 	}
 }
+
+.error404 {
+	.p-page-title {
+		&__wrap {
+			width: 100%;
+			height: 225px;
+			margin-bottom: 30px;
+			position: relative;
+			overflow: hidden;
+			@include breakpoint( tablet ) {
+				// height: 500px;
+				// margin-bottom: 60px;
+			}
+			@include breakpoint( pc ) {
+				// height: 500px;
+			}
+		}
+	}
+}

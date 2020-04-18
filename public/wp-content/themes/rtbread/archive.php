@@ -1,6 +1,4 @@
-<?php get_header(); ?>
-<div class="l-container p-archive">
-	<article class="l-main">
+		<?php get_header(); ?>
 		<div class="p-page-title">
 			<h1 class="main">Menu:
 				<span class="sub"><?php echo esc_html( single_term_title( '', false ) ); ?></span>

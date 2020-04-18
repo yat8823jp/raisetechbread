@@ -1,6 +1,4 @@
-<?php get_header(); ?>
-<div class="l-container p-detail">
-	<article class="l-main">
+		<?php get_header(); ?>
 		<div class="p-page-title__wrap">
 			<div class="p-page-title">
 				<h1 class="main"><?php the_title(); ?></h1>

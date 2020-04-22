@@ -2,7 +2,6 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<?php get_template_part( "component/googletag_head" ); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 	<meta property="og:locale" content="ja_JP">

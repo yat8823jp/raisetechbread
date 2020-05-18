@@ -30,6 +30,7 @@
 		border-radius: 8px;
 		box-sizing: border-box;
 		font-size: 1.6rem;
+		-webkit-appearance: textfield;
 		@include breakpoint( pc ) {
 			width: calc( 100% - 14px - 24% - 10px );
 		}

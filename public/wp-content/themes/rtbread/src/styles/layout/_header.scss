@@ -17,6 +17,7 @@
 		font-weight: bold;
 		color: #707070;
 		@include breakpoint( pc ) {
+			margin-bottom: 0;
 			font-size: 3.4vw;
 		}
 	}

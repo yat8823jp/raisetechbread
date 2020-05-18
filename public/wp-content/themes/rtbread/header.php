@@ -7,14 +7,14 @@
 	<meta property="og:locale" content="ja_JP">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-	<meta property="og:image" content="<?php echo COMMON_PFIX; ?>/images/common/meta/ogp_fb.jpg">
+	<meta property="og:image" content="<?php get_template_directory_uri(); ?>/images/common/meta/ogp_fb.jpg">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="blog">
 	<meta name="twitter:title" content="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'url' ); ?>">
 	<meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
 	<meta property="og:url" content="<?php bloginfo( 'url' ); ?>">
 	<meta property="og:description" content="<?php get_template_part( "component/description" ); ?>">
-	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/images/common/favicon.ico">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php get_template_directory_uri(); ?>/images/common/favicon.ico">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

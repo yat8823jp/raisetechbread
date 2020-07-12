@@ -8,14 +8,13 @@ editor-style.css
 editor-style.css.map
 bundle.js
 package-lock.json
-vendor
 
 /*/*
 !/*/wp-content/
 /*/wp-content/*
 !/*/wp-content/themes/
 /*/wp-content/themes/*
-!/*/wp-content/themes/rtbread/
+!/*/wp-content/themes/themrish/
 htdocs/
 
 

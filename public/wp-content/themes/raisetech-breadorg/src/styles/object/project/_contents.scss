@@ -1,0 +1,26 @@
+.p-contents {
+	padding: 20px;
+	@include breakpoint( tablet ) {
+		padding: 40px;
+	}
+	@include breakpoint( pc ) {
+		padding: 60px 100px;
+	}
+}
+.home {
+	.p-contents {
+		padding: inherit;
+		@include breakpoint( tablet ) {
+			padding: inherit;
+		}
+		@include breakpoint( pc ) {
+			padding: inherit;
+		}
+	}
+}
+
+.search {
+	.p-contents {
+		padding-bottom: 60px;
+	}
+}

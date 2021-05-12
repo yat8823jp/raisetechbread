@@ -1,0 +1,15 @@
+.no-thumbnail {
+	width: 100%;
+	height: 100%;
+	background: #707070;
+}
+
+#wpadminbar {
+	z-index: 1;
+	@media screen and (max-width: 600px) {
+		top: -46px;
+	}
+	@include breakpoint( pc ) {
+		z-index: 9999;
+	}
+}

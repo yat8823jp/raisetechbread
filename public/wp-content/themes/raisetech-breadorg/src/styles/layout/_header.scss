@@ -1,0 +1,29 @@
+.l-header {
+	padding: 50px 30px 40px;
+	background: #FFF7EF;
+	position: relative;
+	text-align: center;
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__sitename {
+		margin-bottom: 40px;
+		font-size: 4.0rem;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		color: #707070;
+		@include breakpoint( pc ) {
+			margin-bottom: 0;
+			font-size: 3.4vw;
+		}
+	}
+	.p-gmenu-bt--open {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+}

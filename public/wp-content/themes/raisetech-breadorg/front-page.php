@@ -1,4 +1,4 @@
-		<?php get_header(); ?>
+<?php get_header(); ?>
 		<div class="p-mainvisual">
 			<h2>ダミーサイト1</h2>
 		</div>
